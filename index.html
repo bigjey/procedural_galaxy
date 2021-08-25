@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Procedural Galaxy</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background: #f0f0f0;
+      }
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+      }
+      canvas {
+        position: absolute;
+        background: #fff;
+        width: 100%;
+        height: 100%;
+      }
+      #inspired {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        color: #fff;
+        font: 16px Monospace;
+        padding: 10px;
+      }
+      a {
+        color: #39f;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <div id="inspired">
+      Inspired by
+      <a href="https://www.youtube.com/watch?v=ZZY9YE7rZJw" target="_blank"
+        >"Procedural Generation: Programming The Universe" video by javidx9</a
+      >
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/seedrandom/3.0.5/seedrandom.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
